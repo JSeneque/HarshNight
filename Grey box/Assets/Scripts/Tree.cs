@@ -15,4 +15,20 @@ public class Tree : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Axe") {
+            noOfChopsForWood--;
+        }
+    }
+
+    void resetChops()
+    {
+        noOfChopsForWood = 3;   //remove this hardcoded value
+        noOfWoodBeforeFell--;
+        if (noOfWoodBeforeFell <= 0) {
+            //make the tree fall
+        }
+    }
 }
