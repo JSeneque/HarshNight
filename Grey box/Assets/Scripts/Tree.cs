@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tree : MonoBehaviour {
+    public int noOfChopsForWood = 3;
+    public int noOfWoodBeforeFell = 4;
 
 	// Use this for initialization
 	void Start () {
