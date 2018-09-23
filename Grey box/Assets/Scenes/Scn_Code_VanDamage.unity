@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd71458605441d42afa5cdc04e7d6e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noOfChopsForWood: 3
+  noOfChopsForWood: 2
   noOfWoodBeforeFell: 4
   fireWood: {fileID: 1358635029064200, guid: be91518b6fd70eb4ea5ed053d204f41a, type: 2}
 --- !u!114 &1323412169

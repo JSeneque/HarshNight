@@ -9,10 +9,13 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
     public int noOfWoodBeforeFell = 4;
     public GameObject fireWood;
 
+    private int chops;
+
 	// Use this for initialization
 	void Start () {
-		
-	}
+        chops = noOfChopsForWood;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,7 +33,7 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
 
     void resetChops()
     {
-        noOfChopsForWood = 3;   //remove this hardcoded value
+        noOfChopsForWood = chops;   //remove this hardcoded value
         // get the position of the respawn spot
         GameObject respawn = getChildGameObject(this.gameObject, "LogSpawn");
         // create a firewood
@@ -52,8 +55,4 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
         return null;
     }
 
-    //public void OnPointerClick(PointerEventData pointerEventData)
-    //{
-    //    noOfChopsForWood--;
-    //}
 }
