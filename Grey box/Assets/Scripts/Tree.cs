@@ -7,14 +7,17 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
 {
     public int noOfChopsForWood = 3;
     public int noOfWoodBeforeFell = 4;
+    public int speed = 8;
+    public int destroyTreeDelay = 5;
     public GameObject fireWood;
 
     private int chops;
+    private Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
         chops = noOfChopsForWood;
-
+        rb = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
@@ -22,6 +25,16 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
         if (noOfChopsForWood == 0)
             resetChops();
 
+    }
+
+    void FixedUpdate()
+    {
+        if (noOfWoodBeforeFell <= 0) {
+            rb.isKinematic = false;
+            rb.AddForce(transform.forward * speed);
+            StartCoroutine(DestroyTree(destroyTreeDelay));
+
+        }
     }
 
     public void ChopMe()
@@ -43,9 +56,9 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
    
 
         noOfWoodBeforeFell--;
-        if (noOfWoodBeforeFell <= 0) {
-            //make the tree fall
-        }
+        if (noOfWoodBeforeFell <= 0) 
+            noOfWoodBeforeFell = 0;
+        
     }
 
     private GameObject getChildGameObject(GameObject fromGameObject, string withName)
@@ -53,6 +66,12 @@ public class Tree : MonoBehaviour//, IPointerClickHandler
         Transform[] ts = fromGameObject.transform.GetComponentsInChildren<Transform>(true);
         foreach (Transform t in ts) if (t.gameObject.name == withName) return t.gameObject;
         return null;
+    }
+
+    IEnumerator DestroyTree(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(this.gameObject);
     }
 
 }

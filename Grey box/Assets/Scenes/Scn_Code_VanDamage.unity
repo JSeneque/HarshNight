@@ -160,34 +160,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2365a2ae324b14d49a6f25613406dc69,
     type: 3}
   m_PrefabInternal: {fileID: 70262716}
---- !u!1 &77450446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 77450447}
-  m_Layer: 0
-  m_Name: LogSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &77450447
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 77450446}
-  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.77, y: 0.9729004, z: -0.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1323412167}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &193278808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9a81f83a649dbba4792fd9b08e27bda9,
@@ -420,10 +392,6 @@ Prefab:
     - target: {fileID: 4910168285145194, guid: c1e1192b078b25d4c9a3ac68b3eea887, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1408557309932864, guid: c1e1192b078b25d4c9a3ac68b3eea887, type: 2}
-      propertyPath: m_TagString
-      value: Axe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e1192b078b25d4c9a3ac68b3eea887, type: 2}
@@ -835,72 +803,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a81f83a649dbba4792fd9b08e27bda9, type: 3}
   m_IsPrefabAsset: 0
---- !u!1 &1323412163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1408557309932864, guid: c1e1192b078b25d4c9a3ac68b3eea887,
-    type: 2}
-  m_PrefabInternal: {fileID: 544285137}
---- !u!65 &1323412164
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1323412163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.86, y: 6.5267453, z: 0.62}
-  m_Center: {x: 0.00000011920929, y: 3.2633727, z: -0.00000047683716}
---- !u!4 &1323412167 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4910168285145194, guid: c1e1192b078b25d4c9a3ac68b3eea887,
-    type: 2}
-  m_PrefabInternal: {fileID: 544285137}
---- !u!114 &1323412168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1323412163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd71458605441d42afa5cdc04e7d6e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noOfChopsForWood: 2
-  noOfWoodBeforeFell: 4
-  fireWood: {fileID: 1358635029064200, guid: be91518b6fd70eb4ea5ed053d204f41a, type: 2}
---- !u!114 &1323412169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1323412163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1323412168}
-          m_MethodName: ChopMe
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  delegates: []
 --- !u!1 &1413076814
 GameObject:
   m_ObjectHideFlags: 0
