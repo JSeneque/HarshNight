@@ -17,4 +17,6 @@ public class FireWood : MonoBehaviour {
         rb.AddForce(transform.forward * -thrust);
         thrust = 0;
     }
+
+
 }
