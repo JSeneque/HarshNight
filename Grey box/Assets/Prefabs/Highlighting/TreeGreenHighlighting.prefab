@@ -9,48 +9,49 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1730708318905418}
+  m_RootGameObject: {fileID: 1770797465209884}
   m_IsPrefabAsset: 1
---- !u!1 &1730708318905418
+--- !u!1 &1770797465209884
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4440488880527960}
-  - component: {fileID: 33928715500161752}
-  - component: {fileID: 23312560407370786}
-  - component: {fileID: 114130151612113362}
-  - component: {fileID: 65121043516385158}
-  - component: {fileID: 114583694783650538}
-  - component: {fileID: 54197888622972880}
+  - component: {fileID: 4743153194021202}
+  - component: {fileID: 33561863123909700}
+  - component: {fileID: 23507515432900242}
+  - component: {fileID: 114250933211201904}
+  - component: {fileID: 65264656279689344}
+  - component: {fileID: 114386774463032526}
+  - component: {fileID: 54431441675159846}
+  - component: {fileID: 114617076172977876}
   m_Layer: 0
-  m_Name: zzzTreeGreen
+  m_Name: TreeGreenHighlighting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4440488880527960
+--- !u!4 &4743153194021202
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.72, y: 0, z: 0.96}
+  m_LocalPosition: {x: 0.92, y: 0.000000038146965, z: 1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23312560407370786
+--- !u!23 &23507515432900242
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,9 +61,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d95b0c83bef60dc48802783694a38eb8, type: 3}
-  - {fileID: 2100002, guid: d95b0c83bef60dc48802783694a38eb8, type: 3}
-  - {fileID: 2100004, guid: d95b0c83bef60dc48802783694a38eb8, type: 3}
+  - {fileID: 2100000, guid: 5f848aa580bc3244bbd46d9c47a17ac6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,19 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33928715500161752
+--- !u!33 &33561863123909700
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
-  m_Mesh: {fileID: 4300000, guid: d95b0c83bef60dc48802783694a38eb8, type: 3}
---- !u!54 &54197888622972880
+  m_GameObject: {fileID: 1770797465209884}
+  m_Mesh: {fileID: 4300002, guid: 5b4a5ddb3680d334e9601fbc76959747, type: 3}
+--- !u!54 &54431441675159846
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -104,24 +103,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65121043516385158
+--- !u!65 &65264656279689344
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.16, y: 5.75359, z: 0.62}
   m_Center: {x: -0.00000023841858, y: 2.876795, z: 0}
---- !u!114 &114130151612113362
+--- !u!114 &114250933211201904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18cfd0e66e2cf734c87b5ca866930c9e, type: 3}
@@ -130,14 +129,14 @@ MonoBehaviour:
   health: 5
   speed: 8
   logs: 4
-  destroyTreeDelay: 5
-  log: {fileID: 1358635029064200, guid: be91518b6fd70eb4ea5ed053d204f41a, type: 2}
---- !u!114 &114583694783650538
+  destroyTreeDelay: 2
+  log: {fileID: 1527284523102748, guid: eba3d1b286c3aaf46aabf54c9626c33d, type: 2}
+--- !u!114 &114386774463032526
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730708318905418}
+  m_GameObject: {fileID: 1770797465209884}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -148,7 +147,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114130151612113362}
+        - m_Target: {fileID: 114250933211201904}
           m_MethodName: ChopMe
           m_Mode: 1
           m_Arguments:
@@ -162,3 +161,16 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114617076172977876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770797465209884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0096c1711b7540540ad677f9d553a09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationTime: 1
+  threshold: 1.5
