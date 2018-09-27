@@ -7,6 +7,7 @@ public class Tree2 : MonoBehaviour {
     public int speed = 8;
     public int logs = 4;
     public int destroyTreeDelay = 5;
+    public int treeFallDelay = 4;
 
     public GameObject log;
     private Rigidbody rb;
@@ -20,10 +21,10 @@ public class Tree2 : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (health <= 0) {
-            rb.isKinematic = false;
-            rb.AddForce(transform.forward * speed);
-            StartCoroutine(DestroyTree(destroyTreeDelay));
-           
+            //rb.isKinematic = false;
+            //rb.AddForce(transform.forward * speed);
+            //StartCoroutine(DestroyTree(destroyTreeDelay));
+            StartCoroutine(TreeFall(treeFallDelay));
         }
 	}
 
@@ -42,5 +43,13 @@ public class Tree2 : MonoBehaviour {
         health--;
         if (health < 0)
             health = 0;
+    }
+
+    IEnumerator TreeFall(float time)
+    {
+        yield return new WaitForSeconds(time);
+        rb.isKinematic = false;
+        rb.AddForce(transform.forward * speed);
+        StartCoroutine(DestroyTree(destroyTreeDelay));
     }
 }

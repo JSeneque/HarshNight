@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 54431441675159846}
   m_Layer: 0
   m_Name: TreeGreen
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1770797465209884}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.92, y: 0.000000038146965, z: 1.6}
+  m_LocalPosition: {x: 4.23, y: 0.000000038146972, z: 1.0489072}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,10 +125,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18cfd0e66e2cf734c87b5ca866930c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 1
   speed: 8
   logs: 4
   destroyTreeDelay: 2
+  treeFallDelay: 4
   log: {fileID: 1527284523102748, guid: eba3d1b286c3aaf46aabf54c9626c33d, type: 2}
 --- !u!114 &114386774463032526
 MonoBehaviour:
