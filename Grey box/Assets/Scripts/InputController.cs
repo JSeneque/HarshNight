@@ -10,7 +10,7 @@ public class InputController : MonoBehaviour {
 
     private Inventory inventory;
     private GameObject player;
-    
+    private GameObject campFire;
 
     void Awake()
     {
@@ -20,6 +20,7 @@ public class InputController : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
         source.clip = choppingSound;
     }
@@ -60,7 +61,7 @@ public class InputController : MonoBehaviour {
                                 inventory.isFull[i] = false;
                                 print("Destroy firewood from slot " + i);
                                 // react campfire
-
+                                campFire.GetComponent<CampFire>().AddFirewood();
                                 break;
                             }
                             
