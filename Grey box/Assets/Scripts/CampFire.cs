@@ -36,6 +36,10 @@ public class CampFire : MonoBehaviour {
             //main.startLifetime = 2.0f;
         }
 
+        // clamp health to zero
+        if (health <= 0)
+            health = 0;
+
         var main = flamePs.main;
         main.startSize = health;
     }
