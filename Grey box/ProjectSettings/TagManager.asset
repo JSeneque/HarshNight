@@ -8,6 +8,7 @@ TagManager:
   - Campfire
   - Tree
   - Firewood
+  - MeatRaw
   layers:
   - Default
   - TransparentFX

@@ -36,4 +36,12 @@ public class Rabbit : MonoBehaviour {
             _agent.SetDestination(newPos);
         }
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+           Destroy(gameObject);
+        }
+    }
 }

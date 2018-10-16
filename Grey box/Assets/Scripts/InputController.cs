@@ -54,6 +54,7 @@ public class InputController : MonoBehaviour {
 
                             GameObject child = inventory.slots[i].gameObject.transform.GetChild(0).gameObject;
 
+                            // if the item is a firewood then add to campfire
                             if (child.tag == "Firewood")
                             {
                                 // empty slot
@@ -64,7 +65,18 @@ public class InputController : MonoBehaviour {
                                 campFire.GetComponent<CampFire>().AddFirewood();
                                 break;
                             }
-                            
+
+                            // if the item is a piece of raw meat, cook it
+                            if (child.tag == "MeatRaw")
+                            {
+                                // 1. change the button to meat cooked
+                                //Destroy(child);
+                                //inventory.isFull[i] = false;
+                                print("Cooked the meat in slot " + i);
+                                
+                                break;
+                            }
+
                         }
                     }
                 }
