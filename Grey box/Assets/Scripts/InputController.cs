@@ -11,11 +11,9 @@ public class InputController : MonoBehaviour {
     private Inventory inventory;
     private GameObject player;
     private GameObject campFire;
+    public GameObject gameManager;
 
-    void Awake()
-    {
-        
-    }
+
 
     void Start()
     {
@@ -23,19 +21,21 @@ public class InputController : MonoBehaviour {
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
         source.clip = choppingSound;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
     // Update is called once per frame
     void Update ()
     {
-		
+
         if (Input.GetKeyUp("e"))
         {
-          
-            // Use OverlapSphrere around the player to determine which game objects
+            //gameManager.AnyInteractableObjectsNear();
+            //gameManager.GetComponent<GameManager>().AnyInteractableObjectsNear();
+            //Use OverlapSphrere around the player to determine which game objects
             // nearby to interact with
             Collider[] hitColliders = Physics.OverlapSphere(player.transform.position, radius);
 
-            foreach(Collider col in hitColliders)
+            foreach (Collider col in hitColliders)
             {
                 // this feels silly to dictate each object we can interactive with. 
                 // Feel very wrong but going with it for now
@@ -49,10 +49,10 @@ public class InputController : MonoBehaviour {
                         // check if the slot has something
                         if (inventory.isFull[i] == true)
                         {
-                            print("Slot " + i + " has something!");
+                            
                             // determine the itemButton in inventory
-
                             GameObject child = inventory.slots[i].gameObject.transform.GetChild(0).gameObject;
+                            //Debug.Log("Slot has something a " + child.tag);
 
                             // if the item is a firewood then add to campfire
                             if (child.tag == "Firewood")
@@ -60,7 +60,7 @@ public class InputController : MonoBehaviour {
                                 // empty slot
                                 Destroy(child);
                                 inventory.isFull[i] = false;
-                                print("Destroy firewood from slot " + i);
+                                //Debug.Log("Destroy firewood from slot " + i);
                                 // react campfire
                                 campFire.GetComponent<CampFire>().AddFirewood();
                                 break;
@@ -68,12 +68,8 @@ public class InputController : MonoBehaviour {
 
                             // if the item is a piece of raw meat, cook it
                             if (child.tag == "MeatRaw")
-                            {
-                                // 1. change the button to meat cooked
-                                //Destroy(child);
-                                //inventory.isFull[i] = false;
-                                print("Cooked the meat in slot " + i);
-                                
+                            {                   
+                                gameManager.GetComponent<GameManager>().CookMeat(i);
                                 break;
                             }
 
@@ -85,7 +81,7 @@ public class InputController : MonoBehaviour {
                 if (col.gameObject.tag == "Tree")
                 {
                     //source.PlayOneShot(choppingSound);
-                    print("chopping sound");
+                    Debug.Log("chopping sound");
                     source.Play();
                     col.gameObject.GetComponent<Tree2>().ChopMe();
                 }

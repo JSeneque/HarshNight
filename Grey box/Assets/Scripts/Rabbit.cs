@@ -22,7 +22,7 @@ public class Rabbit : MonoBehaviour {
         // get the distance from the player
         float distance = Vector3.Distance(transform.position, Player.transform.position);
 
-        Debug.Log("Distance: " + distance);
+        //Debug.Log("Distance: " + distance);
 
         // if the player is too close, runaway
         if (distance < PlayerDistanceRun)

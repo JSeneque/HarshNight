@@ -9,6 +9,8 @@ TagManager:
   - Tree
   - Firewood
   - MeatRaw
+  - MeatCooked
+  - GameManager
   layers:
   - Default
   - TransparentFX
