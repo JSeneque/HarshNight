@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114344718253024248}
   m_Layer: 5
   m_Name: MeatCookButton
-  m_TagString: MeatRaw
+  m_TagString: MeatCooked
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -2630,6 +2630,8 @@ MonoBehaviour:
   radius: 1
   choppingSound: {fileID: 8300000, guid: 25b9099553c323045bf74d56460da2ba, type: 3}
   source: {fileID: 2096652699}
+  meatCookedButton: {fileID: 1555476597874816, guid: d898cbff0223679439ae862594d4820d,
+    type: 2}
   gameManager: {fileID: 1338342851344240, guid: ec1e0c2a9d0874d4f8dcf83a2a2eaf3f,
     type: 2}
 --- !u!82 &2096652699
