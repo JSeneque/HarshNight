@@ -20,7 +20,8 @@ public class Rabbit : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _agent = GetComponent<NavMeshAgent>();
-	}
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
 	
 	// Update is called once per frame
 	void Update () {
