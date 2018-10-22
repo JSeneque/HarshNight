@@ -17,6 +17,7 @@ public class PlayerVitals : MonoBehaviour {
         public Color lowHealthColour = Color.red;
         public float lowHealthAmount = 0.3f;
         public Image healthBar;
+        public float currentHealth;
     }
     public Health health;
 
@@ -32,6 +33,7 @@ public class PlayerVitals : MonoBehaviour {
         public Color lowHeatColour = Color.red;
         public float lowHeatAmount = 0.3f;
         public Image heatBar;
+
     }
     public Heat heat;
 
@@ -47,6 +49,7 @@ public class PlayerVitals : MonoBehaviour {
         healthSteps = health.intervals;
         initialHeat = heat.startHeat;
         heatSteps = heat.intervals;
+
     }
 	
 	// Update is called once per frame
@@ -68,6 +71,8 @@ public class PlayerVitals : MonoBehaviour {
         // clamp health to zero
         if (initialHealth <= 0)
             initialHealth = 0;
+
+        health.currentHealth = initialHealth;
 
         //changes to heat
         heatSteps -= Time.deltaTime;
@@ -123,5 +128,12 @@ public class PlayerVitals : MonoBehaviour {
         {
             heat.heatBar.color = heat.lowHeatColour;
         }
+    }
+
+    public void IncreaseHealth(float amount)
+    {
+        initialHealth += amount;
+        if (initialHealth > 100)
+            initialHealth = 100;
     }
 }
