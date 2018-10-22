@@ -11,8 +11,12 @@ public class ItemClickHandler : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
+
+    // handles which events to process depending on the item clicked
+    // on in the inventory
     public void OnItemClicked()
     {
+        // if cooked meat is clicked
         if (gameObject.tag == "MeatCooked")
         {
             // increase the player's health

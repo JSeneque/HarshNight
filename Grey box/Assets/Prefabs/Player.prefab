@@ -415,7 +415,8 @@ GameObject:
   - component: {fileID: 136828924216664902}
   - component: {fileID: 114506810900838214}
   - component: {fileID: 114914902163087840}
-  - component: {fileID: 114614622614790596}
+  - component: {fileID: 114256736125953426}
+  - component: {fileID: 114524668928506804}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1687,7 +1688,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1311431688302152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.11, y: 0, z: -1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4146819842042468}
@@ -2487,18 +2488,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114506810900838214
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1311431688302152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114614622614790596
+--- !u!114 &114256736125953426
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2515,6 +2505,49 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &114506810900838214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311431688302152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114524668928506804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311431688302152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3be46808e5b294683faccb6f01d1ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health:
+    startHealth: 100
+    reduceHealthAmount: 1
+    intervals: 2
+    goodHealthColour: {r: 0, g: 1, b: 0, a: 1}
+    midHealthColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    midHealthAmount: 0.6
+    lowHealthColour: {r: 1, g: 0, b: 0, a: 1}
+    lowHealthAmount: 0.3
+    healthBar: {fileID: 0}
+    currentHealth: 0
+  heat:
+    startHeat: 100
+    reduceHeatAmount: 5
+    intervals: 2
+    goodHeatColour: {r: 1, g: 0.2784314, b: 0, a: 1}
+    midHeatColour: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    midHeatAmount: 0.6
+    lowHeatColour: {r: 0, g: 0.4782095, b: 1, a: 1}
+    lowHeatAmount: 0.3
+    heatBar: {fileID: 0}
 --- !u!114 &114914902163087840
 MonoBehaviour:
   m_ObjectHideFlags: 1
