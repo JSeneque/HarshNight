@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 933078c5444170e449d9e5b5eabe7384
+  - enabled: 1
     path: Assets/Scenes/Scn_Code_VanDamage.unity
     guid: 54d15847f7da0f34aab8c7e6b0e4aed9
   m_configObjects: {}

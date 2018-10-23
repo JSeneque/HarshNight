@@ -11,6 +11,9 @@ public class CampFire : MonoBehaviour {
     public float maxSmokeSize = 3.0f;
     public float volume;
 
+    // make true if you do not want the health to lower over time
+    public bool disableHealth = false;
+
     private GameObject flame;
     private GameObject smoke;
     private ParticleSystem flamePs;
@@ -29,55 +32,62 @@ public class CampFire : MonoBehaviour {
         steps = lowerFlameEveryXSec;
         lowerSmoke = false;
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = volume;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        steps -= Time.deltaTime;
 
-        if (steps <= 0)
+        if (!disableHealth)
         {
-            steps = lowerFlameEveryXSec;
-            health -= 0.1f;
+            steps -= Time.deltaTime;
 
-            if (health <= flameSize)
+            if (steps <= 0)
             {
-                if (!lowerSmoke)
-                    smokeSize += 1.0f;
-                else 
-                    smokeSize -= 0.5f;
+                steps = lowerFlameEveryXSec;
+                health -= 0.1f;
+
+                if (health <= flameSize)
+                {
+                    if (!lowerSmoke)
+                        smokeSize += 1.0f;
+                    else
+                        smokeSize -= 0.5f;
+                }
             }
+
+            if (smokeSize <= 0)
+                smokeSize = 0;
+
+            // clamp health to zero
+            if (smokeSize >= maxSmokeSize)
+                smokeSize = maxSmokeSize;
+
+            // the camp fire is getting low, start smoking
+            var smokeMain = smokePs.main;
+            smokeMain.startSize = smokeSize;
+
+
+            // clamp health to zero
+            if (health <= 0)
+                health = 0;
+
+            // adjust the camp fire sound based on the campfire health
+            volume = health / 12.0f;
+            audioSource.volume = volume;
+
+            // if fire is out and smoke is at it's highest,
+            // time to lower the smoke intensity 
+            if (health == 0 && !lowerSmoke)
+            {
+                lowerSmoke = true;
+            }
+
+            var main = flamePs.main;
+            main.startSize = health;
         }
 
-        if (smokeSize <= 0)
-            smokeSize = 0;
-
-        // clamp health to zero
-        if (smokeSize >= maxSmokeSize)
-            smokeSize = maxSmokeSize;
-
-        // the camp fire is getting low, start smoking
-        var smokeMain = smokePs.main;
-        smokeMain.startSize = smokeSize;
-
-        
-        // clamp health to zero
-        if (health <= 0)
-            health = 0;
-
-        // adjust the camp fire sound based on the campfire health
-        volume = health / 12.0f;
-        audioSource.volume = volume;
-
-        // if fire is out and smoke is at it's highest,
-        // time to lower the smoke intensity 
-        if (health == 0 && !lowerSmoke)
-        {
-            lowerSmoke = true;
-        }
-
-        var main = flamePs.main;
-        main.startSize = health;
+       
     }
 
     public void AddFirewood()
