@@ -9,6 +9,7 @@ public class CampFire : MonoBehaviour {
     public float smokeSize = 0.0f;
     public float flameSize = 0.3f;
     public float maxSmokeSize = 3.0f;
+    public float volume;
 
     private GameObject flame;
     private GameObject smoke;
@@ -16,6 +17,7 @@ public class CampFire : MonoBehaviour {
     private ParticleSystem smokePs;
     private bool lowerSmoke;
     private float steps;
+    private AudioSource audioSource;
 
     // Use this for initialization
     void Start () {
@@ -26,6 +28,7 @@ public class CampFire : MonoBehaviour {
         //smoke.particleSystem.
         steps = lowerFlameEveryXSec;
         lowerSmoke = false;
+        audioSource = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -61,6 +64,10 @@ public class CampFire : MonoBehaviour {
         // clamp health to zero
         if (health <= 0)
             health = 0;
+
+        // adjust the camp fire sound based on the campfire health
+        volume = health / 12.0f;
+        audioSource.volume = volume;
 
         // if fire is out and smoke is at it's highest,
         // time to lower the smoke intensity 
