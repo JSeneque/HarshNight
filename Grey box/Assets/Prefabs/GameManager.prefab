@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4699671274821282}
   - component: {fileID: 114482747687305576}
   - component: {fileID: 82023587771588330}
+  - component: {fileID: 114912861299230296}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -154,3 +155,21 @@ MonoBehaviour:
     type: 2}
   gameOverImage: {fileID: 0}
   gameOverText: {fileID: 0}
+  TutorialMode: 0
+  restartDelay: 1
+--- !u!114 &114912861299230296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1050071011013840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2c68ef96a92e24cba7d4de6b651d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - What is this place? How did I get here?
+    - I am getting real cold and that fire is about to go out.
+    - Maybe I can use that axe, chop that tree and get that fire roaring again.

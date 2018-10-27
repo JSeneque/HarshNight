@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour {
     //public Text nameText;
     public Text dialogueText;
     public Image continueButton;
+    public Image textBg;
 
     // animator
     //public Animator animator;
@@ -20,6 +21,7 @@ public class DialogueManager : MonoBehaviour {
         sentences = new Queue<string>();
         dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0);
         continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, 0);
+        textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, 0);
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -86,25 +88,32 @@ public class DialogueManager : MonoBehaviour {
 
     public IEnumerator FadeTextToFullAlpha(float t)
     {
+        Debug.Log("FadeTextToFullAlpha");
         dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0);
         continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, 0);
+        textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, 0);
 
         while (dialogueText.color.a < 1.0f)
         {
             dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a + (Time.deltaTime / t));
             continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, continueButton.color.a + (Time.deltaTime / t));
+            textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, textBg.color.a + (Time.deltaTime / t));
             yield return null;
         }
     }
 
     public IEnumerator FadeTextToZeroAlpha(float t)
     {
+        Debug.Log("FadeTextToZeroAlpha");
         dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 1);
         continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, 1);
+        textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, 0.5f);
+
         while (dialogueText.color.a > 0.0f)
         {
             dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, dialogueText.color.a - (Time.deltaTime / t));
             continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, continueButton.color.a - (Time.deltaTime / t));
+            textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, textBg.color.a - (Time.deltaTime / t));
             yield return null;
         }
     }

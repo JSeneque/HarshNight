@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
     public float radius = 10.0f;
 
     public AudioClip choppingSound;
@@ -17,9 +18,13 @@ public class GameManager : MonoBehaviour {
     private Inventory inventory;
     private GameObject player;
 
+
     // please replace with a image only
     public Image gameOverImage;
     public Text gameOverText;
+
+    // Are we in tutorial mode
+    public bool TutorialMode = false;
 
     public float restartDelay = 1f;
 
@@ -27,7 +32,7 @@ public class GameManager : MonoBehaviour {
 
     public enum GameState
     {
-        
+
         InProgress,
         GameOver
     }
@@ -56,12 +61,25 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
     }
-    
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
+
+        // check if it is a tutorial
+        if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
+        {
+            TutorialMode = true;
+
+            // start the player instructions
+            StartCoroutine(StartTutorialInstructions(3.0f));
+        }
+
+        else
+            TutorialMode = false;
+
     }
 
     public void CookMeat(int slot)
@@ -79,7 +97,7 @@ public class GameManager : MonoBehaviour {
         gameState = GameState.GameOver;
         //gameOverImage.enabled = true;
         //gameOverText.enabled = true;
-        
+
         Debug.Log("GameManager.GameOver() called");
         //Invoke("Restart", restartDelay);
         Restart();
@@ -91,5 +109,11 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene("MainMenu");
     }
 
-    
+    public IEnumerator StartTutorialInstructions(float time)
+    {
+        yield return new WaitForSeconds(time);
+        //Debug.Log("Start Player Instructions");
+        GetComponent<DialogueTrigger>().TriggerDialogue();
+
+    }
 }

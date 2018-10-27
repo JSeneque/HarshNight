@@ -438,7 +438,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -5207,9 +5207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce4b80b7f3cedf438ed84a2f22c1ad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomSound: {fileID: 0}
-  audioSources:
-  - {fileID: 8300000, guid: 92c5aca4e9f57684aa2dd093ffeb6119, type: 3}
 --- !u!82 &618980754
 AudioSource:
   m_ObjectHideFlags: 0
