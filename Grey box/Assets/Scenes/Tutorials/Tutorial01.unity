@@ -5674,48 +5674,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1343211968740182, guid: ac45c01a4beea5a4aa39a9911962cbe9,
     type: 2}
   m_PrefabInternal: {fileID: 2065323747}
---- !u!1001 &805153655
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.116
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4999117976651624, guid: a2dc335594462044095b63867005ef2c, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a2dc335594462044095b63867005ef2c, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &853760496
 Prefab:
   m_ObjectHideFlags: 0
@@ -5821,11 +5779,16 @@ Prefab:
     - target: {fileID: 114250933211201904, guid: 5f5a520dfbf9e5e49882c507f504ed04,
         type: 2}
       propertyPath: treeFallDelay
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1770797465209884, guid: 5f5a520dfbf9e5e49882c507f504ed04, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114250933211201904, guid: 5f5a520dfbf9e5e49882c507f504ed04,
+        type: 2}
+      propertyPath: destroyTreeDelay
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5a520dfbf9e5e49882c507f504ed04, type: 2}
@@ -6514,7 +6477,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1458377352
 GameObject:
