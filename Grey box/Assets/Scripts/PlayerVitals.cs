@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerVitals : MonoBehaviour {
 
+
     [System.Serializable]
     public class Health
     {
@@ -16,124 +17,156 @@ public class PlayerVitals : MonoBehaviour {
         public float midHealthAmount = 0.6f;
         public Color lowHealthColour = Color.red;
         public float lowHealthAmount = 0.3f;
-        public Image healthBar;
-        public float currentHealth;
+        //public Image healthBar;
+        public Slider healthBar;
+        //public float currentHealth;
     }
     public Health health;
+    
 
     [System.Serializable]
-    public class Heat
+    public class Warmth
     {
-        public float startHeat = 100.0f;
-        public float reduceHeatAmount = 1.0f;
+        public float startWarmth = 100.0f;
+        public float reduceWarmthAmount = 1.0f;
         public float intervals = 5.0f;
         public Color goodHeatColour = Color.green;
         public Color midHeatColour = Color.yellow;
         public float midHeatAmount = 0.6f;
         public Color lowHeatColour = Color.red;
         public float lowHeatAmount = 0.3f;
-        public Image heatBar;
-
+        public Slider warmthBar;
     }
-    public Heat heat;
+    public Warmth warmth;
 
     [HideInInspector]
-    private float initialHealth;
-    private float initialHeat;
     private float healthSteps;
-    private float heatSteps;
+    float healthCount;
+    float warmthCount;
+    private float warmthSteps;
+
+    public float currentHealth;
+    public float currentWarmth;
+
 
     // Use this for initialization
     void Start () {
-        initialHealth = health.startHealth;
+        currentHealth = health.startHealth;
         healthSteps = health.intervals;
-        initialHeat = heat.startHeat;
-        heatSteps = heat.intervals;
+        currentWarmth = warmth.startWarmth;
+        warmthSteps = warmth.intervals;
+        health.healthBar.maxValue = health.startHealth;
+        warmth.warmthBar.maxValue = warmth.startWarmth;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        // changes to health
-        healthSteps -= Time.deltaTime;
+        UpdateHealth();
+        UpdateWarmth();
 
-        if (healthSteps <= 0)
-        {
-            healthSteps = health.intervals;
-            initialHealth -= health.reduceHealthAmount;
-            health.healthBar.fillAmount = initialHealth / health.startHealth;
-        }
-
-        // check the health and change colour of bar
-        CheckHealth();
-
-        // clamp health to zero
-        if (initialHealth <= 0)
-            initialHealth = 0;
-
-        health.currentHealth = initialHealth;
-
-        //changes to heat
-        heatSteps -= Time.deltaTime;
-
-        if (heatSteps <= 0)
-        {
-            heatSteps = heat.intervals;
-            initialHeat -= heat.reduceHeatAmount;
-            heat.heatBar.fillAmount = initialHeat / heat.startHeat;
-        }
-
-        // check the heat and change colour of bar
-        CheckHeat();
-
-        // clamp health to zero
-        if (initialHeat <= 0)
-            initialHeat = 0;
-
-
+        // check if player is dead
+        IsDead();
     }
 
-    void CheckHealth()
-    {
-        float healthCheck = initialHealth / health.startHealth;
+    //void CheckHealth()
+    //{
+    //    float healthCheck = currentHealth / health.startHealth;
 
-        if(healthCheck >= health.midHealthAmount)
-        {
-            health.healthBar.color = health.goodHealthColour;
-        }
-        if (healthCheck < health.midHealthAmount)
-        {
-            health.healthBar.color = health.midHealthColour;
-        }
-        if (healthCheck < health.lowHealthAmount)
-        {
-            health.healthBar.color = health.lowHealthColour;
-        }
-    }
+    //    if(healthCheck >= health.midHealthAmount)
+    //    {
+    //        health.healthBar.color = health.goodHealthColour;
+    //    }
+    //    if (healthCheck < health.midHealthAmount)
+    //    {
+    //        health.healthBar.color = health.midHealthColour;
+    //    }
+    //    if (healthCheck < health.lowHealthAmount)
+    //    {
+    //        health.healthBar.color = health.lowHealthColour;
+    //    }
+    //}
 
-    void CheckHeat()
-    {
-        float heatCheck = initialHeat / heat.startHeat;
+    //void CheckHeat()
+    //{
+    //    float heatCheck = currentWarmth / heat.startHeat;
 
-        if (heatCheck >= heat.midHeatAmount)
-        {
-            heat.heatBar.color = heat.goodHeatColour;
-        }
-        if (heatCheck < heat.midHeatAmount)
-        {
-            heat.heatBar.color = heat.midHeatColour;
-        }
-        if (heatCheck < heat.lowHeatAmount)
-        {
-            heat.heatBar.color = heat.lowHeatColour;
-        }
-    }
+    //    if (heatCheck >= heat.midHeatAmount)
+    //    {
+    //        heat.warmthBar.color = heat.goodHeatColour;
+    //    }
+    //    if (heatCheck < heat.midHeatAmount)
+    //    {
+    //        heat.warmthBar.color = heat.midHeatColour;
+    //    }
+    //    if (heatCheck < heat.lowHeatAmount)
+    //    {
+    //        heat.warmthBar.color = heat.lowHeatColour;
+    //    }
+    //}
 
     public void IncreaseHealth(float amount)
     {
-        initialHealth += amount;
-        if (initialHealth > 100)
-            initialHealth = 100;
+        currentHealth += amount;
+        if (currentHealth > 100)
+            currentHealth = 100;
+
+       
+    }
+
+    public void IncreaseWarmth(float amount)
+    {
+        currentWarmth += 100.0f;
+
+        if (currentWarmth > warmth.startWarmth)
+            currentWarmth = warmth.startWarmth;
+
+    }
+
+    private void IsDead()
+    {
+        if (currentHealth == 0 || currentWarmth == 0)
+            FindObjectOfType<GameManager>().GameOver();
+        
+    }
+
+    void UpdateHealth()
+    {
+    
+        healthSteps -= Time.deltaTime;
+
+        // decrease health over time
+        if (healthSteps <= 0)
+        {
+            healthSteps = health.intervals;
+            currentHealth -= health.reduceHealthAmount;
+        }
+
+        // clamp health to zero
+        if (currentHealth <= 0)
+            currentHealth = 0;
+
+        // update health bar
+        health.healthBar.value = currentHealth;
+    }
+
+    void UpdateWarmth()
+    {
+        warmthSteps -= Time.deltaTime;
+
+        // decrease warmth over time
+        if (warmthSteps <= 0)
+        {
+            warmthSteps = warmth.intervals;
+            currentWarmth -= warmth.reduceWarmthAmount;
+        }
+
+        // clamp warmth to zero
+        if (currentWarmth <= 0)
+            currentWarmth = 0;
+
+        // update warmth bar
+        warmth.warmthBar.value = currentWarmth;
     }
 }

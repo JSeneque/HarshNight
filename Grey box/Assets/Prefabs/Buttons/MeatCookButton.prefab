@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1c925ff13eec4146b4c4002ced723b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthIncrease: 20
+  healthIncrease: 50
 --- !u!222 &222884818040325972
 CanvasRenderer:
   m_ObjectHideFlags: 1

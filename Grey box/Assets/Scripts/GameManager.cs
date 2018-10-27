@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     public float radius = 10.0f;
@@ -9,16 +11,35 @@ public class GameManager : MonoBehaviour {
     public AudioSource source;
 
     public GameObject meatCookedButton;
-
+    //public Image background;
+    //public TextMesh gameOverText;
     private GameObject campFire;
     private Inventory inventory;
     private GameObject player;
 
+    // please replace with a image only
+    public Image gameOverImage;
+    public Text gameOverText;
+
+    public float restartDelay = 1f;
+
     public static GameManager instance = null;
+
+    public enum GameState
+    {
+        
+        InProgress,
+        GameOver
+    }
+
+    GameState gameState;
 
     //Awake is always called before any Start functions
     void Awake()
     {
+        // set game in idle state
+        gameState = GameState.InProgress;
+
         //Check if instance already exists
         if (instance == null)
 
@@ -52,4 +73,23 @@ public class GameManager : MonoBehaviour {
 
         Instantiate(meatCookedButton, inventory.slots[slot].transform, false);
     }
+
+    public void GameOver()
+    {
+        gameState = GameState.GameOver;
+        //gameOverImage.enabled = true;
+        //gameOverText.enabled = true;
+        
+        Debug.Log("GameManager.GameOver() called");
+        //Invoke("Restart", restartDelay);
+        Restart();
+    }
+
+    void Restart()
+    {
+
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    
 }

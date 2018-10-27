@@ -81,7 +81,7 @@ public class InputController : MonoBehaviour {
                 if (col.gameObject.tag == "Tree")
                 {
                     //source.PlayOneShot(choppingSound);
-                    Debug.Log("chopping sound");
+                    //Debug.Log("chopping sound");
                     source.Play();
                     col.gameObject.GetComponent<Tree2>().ChopMe();
                 }

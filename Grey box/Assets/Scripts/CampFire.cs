@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CampFire : MonoBehaviour {
+public class CampFire : MonoBehaviour
+{
 
     public float health = 0.5f;
     public float lowerFlameEveryXSec = 5.0f;
@@ -10,6 +11,7 @@ public class CampFire : MonoBehaviour {
     public float flameSize = 0.3f;
     public float maxSmokeSize = 3.0f;
     public float volume;
+    public float warmthZoneModifier = 0.5f;
 
     // make true if you do not want the health to lower over time
     public bool disableHealth = false;
@@ -22,8 +24,12 @@ public class CampFire : MonoBehaviour {
     private float steps;
     private AudioSource audioSource;
 
+    // sphere collider acting as the warmth zone 
+    private SphereCollider warmthZone;
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         flame = gameObject.transform.Find("Flame").gameObject;
         smoke = gameObject.transform.Find("Smoke").gameObject;
         flamePs = flame.GetComponent<ParticleSystem>();
@@ -33,10 +39,12 @@ public class CampFire : MonoBehaviour {
         lowerSmoke = false;
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = volume;
+        warmthZone = GetComponent<SphereCollider>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (!disableHealth)
         {
@@ -76,6 +84,9 @@ public class CampFire : MonoBehaviour {
             volume = health / 12.0f;
             audioSource.volume = volume;
 
+            // adjust the warmth zone
+            warmthZone.radius = health + warmthZoneModifier;
+
             // if fire is out and smoke is at it's highest,
             // time to lower the smoke intensity 
             if (health == 0 && !lowerSmoke)
@@ -87,7 +98,7 @@ public class CampFire : MonoBehaviour {
             main.startSize = health;
         }
 
-       
+
     }
 
     public void AddFirewood()
@@ -96,4 +107,27 @@ public class CampFire : MonoBehaviour {
         smokeSize = 0.0f;
         lowerSmoke = false;
     }
+
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    // check if player has enter the warmth zone
+    //    if (other.tag == "Player")
+    //    {
+    //        Debug.Log("Player has enter the warmth zone");
+    //        // add warmth to player
+
+    //    }
+    //}
+
+    private void OnTriggerStay(Collider other)
+    {
+        // check if player has enter the warmth zone
+        if (other.tag == "Player")
+        {
+            Debug.Log("Player has enter the warmth zone");
+            // add warmth to player
+            other.GetComponent<PlayerVitals>().IncreaseWarmth(5.0f);
+        }
+    }
+
 }

@@ -112,6 +112,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   PlayerDistanceRun: 4
   rawMeat: {fileID: 1855324395590304, guid: a2dc335594462044095b63867005ef2c, type: 2}
+  untouchable: 1
 --- !u!195 &195836625238834128
 NavMeshAgent:
   m_ObjectHideFlags: 1
