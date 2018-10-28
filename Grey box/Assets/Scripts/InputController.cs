@@ -73,6 +73,13 @@ public class InputController : MonoBehaviour {
                                 break;
                             }
 
+                            // if in tutorial mode, send event
+                            if(gameManager.GetComponent<GameManager>().IsTutorialMode())
+                            {
+
+                            }
+                      
+
                         }
                     }
                 }

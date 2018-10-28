@@ -6856,7 +6856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257254485}
   m_Layer: 0
-  m_Name: Entries
+  m_Name: Entrances
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7920,6 +7920,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1712048321 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d0bb07c6c6b5ce4d8ab325066b75ece,
+    type: 3}
+  m_PrefabInternal: {fileID: 1779283641}
+--- !u!95 &1712048322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1712048321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36ca2f23d9a19c34c8cfd12fc7507b9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1720680530
 GameObject:
   m_ObjectHideFlags: 0
@@ -8004,7 +8027,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 7d0bb07c6c6b5ce4d8ab325066b75ece, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5338216
+      value: -1.533822
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d0bb07c6c6b5ce4d8ab325066b75ece, type: 3}
       propertyPath: m_LocalPosition.y

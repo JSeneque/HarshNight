@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public Text gameOverText;
 
     // Are we in tutorial mode
-    public bool TutorialMode = false;
+    bool isTutorialMode = false;
 
     public float restartDelay = 1f;
 
@@ -71,14 +71,14 @@ public class GameManager : MonoBehaviour
         // check if it is a tutorial
         if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
         {
-            TutorialMode = true;
+            isTutorialMode = true;
 
             // start the player instructions
             StartCoroutine(StartTutorialInstructions(3.0f));
         }
 
         else
-            TutorialMode = false;
+            isTutorialMode = false;
 
     }
 
@@ -115,5 +115,11 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Start Player Instructions");
         GetComponent<DialogueTrigger>().TriggerDialogue();
 
+    }
+
+    // returns the value of tutorial mode
+    public bool IsTutorialMode()
+    {
+        return isTutorialMode;
     }
 }
