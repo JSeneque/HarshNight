@@ -155,7 +155,6 @@ MonoBehaviour:
     type: 2}
   gameOverImage: {fileID: 0}
   gameOverText: {fileID: 0}
-  TutorialMode: 0
   restartDelay: 1
 --- !u!114 &114912861299230296
 MonoBehaviour:

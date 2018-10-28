@@ -63,6 +63,13 @@ public class InputController : MonoBehaviour {
                                 //Debug.Log("Destroy firewood from slot " + i);
                                 // react campfire
                                 campFire.GetComponent<CampFire>().AddFirewood();
+
+                                // if in tutorial mode, send event
+                                if (gameManager.GetComponent<GameManager>().IsTutorialMode())
+                                {
+                                    EventManager.TriggerEvent("LowerBoulder");
+                                }
+
                                 break;
                             }
 
@@ -73,11 +80,7 @@ public class InputController : MonoBehaviour {
                                 break;
                             }
 
-                            // if in tutorial mode, send event
-                            if(gameManager.GetComponent<GameManager>().IsTutorialMode())
-                            {
-
-                            }
+                           
                       
 
                         }
