@@ -1,0 +1,927 @@
+fileFormatVersion: 2
+guid: 7985f323bbdf64f4881ff6b44e5ee379
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Axe
+    100004: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Head
+    100006: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Hips
+    100008: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftArm
+    100010: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftFoot
+    100012: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftForeArm
+    100014: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftHand
+    100016: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftLeg
+    100018: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftShoulder
+    100020: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftToeBase
+    100022: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftUpLeg
+    100024: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Neck
+    100026: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Reference
+    100028: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightArm
+    100030: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightFoot
+    100032: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightForeArm
+    100034: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightHand
+    100036: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightLeg
+    100038: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightShoulder
+    100040: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightToeBase
+    100042: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightUpLeg
+    100044: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestEndEffector
+    100046: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestOriginEffector
+    100048: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Head
+    100050: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HeadEffector
+    100052: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+    100054: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HipsEffector
+    100056: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftAnkleEffector
+    100058: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftArm
+    100060: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftElbowEffector
+    100062: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFoot
+    100064: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFootEffector
+    100066: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftForeArm
+    100068: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHand
+    100070: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHipEffector
+    100072: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftKneeEffector
+    100074: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftLeg
+    100076: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulder
+    100078: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulderEffector
+    100080: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftToeBase
+    100082: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftUpLeg
+    100084: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftWristEffector
+    100086: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Neck
+    100088: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+    100090: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightAnkleEffector
+    100092: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightArm
+    100094: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightElbowEffector
+    100096: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFoot
+    100098: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFootEffector
+    100100: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightForeArm
+    100102: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHand
+    100104: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHipEffector
+    100106: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightKneeEffector
+    100108: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightLeg
+    100110: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulder
+    100112: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulderEffector
+    100114: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightToeBase
+    100116: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightUpLeg
+    100118: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightWristEffector
+    100120: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine
+    100122: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine1
+    100124: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+    100126: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+    100128: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Head
+    100130: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+    100132: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm
+    100134: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot
+    100136: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm
+    100138: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftHand
+    100140: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg
+    100142: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder
+    100144: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftToeBase
+    100146: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg
+    100148: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck
+    100150: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Reference
+    100152: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm
+    100154: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot
+    100156: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm
+    100158: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightHand
+    100160: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg
+    100162: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder
+    100164: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightToeBase
+    100166: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg
+    100168: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine
+    100170: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1
+    100172: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+    100174: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine
+    100176: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine1
+    100178: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine2
+    400000: //RootNode
+    400002: Axe
+    400004: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Head
+    400006: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Hips
+    400008: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftArm
+    400010: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftFoot
+    400012: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftForeArm
+    400014: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftHand
+    400016: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftLeg
+    400018: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftShoulder
+    400020: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftToeBase
+    400022: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftUpLeg
+    400024: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Neck
+    400026: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Reference
+    400028: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightArm
+    400030: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightFoot
+    400032: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightForeArm
+    400034: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightHand
+    400036: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightLeg
+    400038: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightShoulder
+    400040: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightToeBase
+    400042: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightUpLeg
+    400044: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestEndEffector
+    400046: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestOriginEffector
+    400048: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Head
+    400050: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HeadEffector
+    400052: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+    400054: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HipsEffector
+    400056: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftAnkleEffector
+    400058: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftArm
+    400060: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftElbowEffector
+    400062: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFoot
+    400064: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFootEffector
+    400066: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftForeArm
+    400068: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHand
+    400070: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHipEffector
+    400072: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftKneeEffector
+    400074: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftLeg
+    400076: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulder
+    400078: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulderEffector
+    400080: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftToeBase
+    400082: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftUpLeg
+    400084: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftWristEffector
+    400086: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Neck
+    400088: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+    400090: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightAnkleEffector
+    400092: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightArm
+    400094: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightElbowEffector
+    400096: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFoot
+    400098: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFootEffector
+    400100: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightForeArm
+    400102: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHand
+    400104: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHipEffector
+    400106: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightKneeEffector
+    400108: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightLeg
+    400110: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulder
+    400112: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulderEffector
+    400114: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightToeBase
+    400116: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightUpLeg
+    400118: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightWristEffector
+    400120: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine
+    400122: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine1
+    400124: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+    400126: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+    400128: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Head
+    400130: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+    400132: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm
+    400134: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot
+    400136: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm
+    400138: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftHand
+    400140: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg
+    400142: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder
+    400144: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftToeBase
+    400146: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg
+    400148: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck
+    400150: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Reference
+    400152: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm
+    400154: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot
+    400156: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm
+    400158: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightHand
+    400160: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg
+    400162: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder
+    400164: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightToeBase
+    400166: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg
+    400168: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine
+    400170: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1
+    400172: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+    400174: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine
+    400176: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine1
+    400178: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine2
+    2100000: Texture_Test
+    2300000: Axe
+    3300000: Axe
+    4300000: Axe
+    7400000: Anim_Char_Attack&Chop
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Anim_Char_Attack&Chop' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation DOF
+      on avatar to improve retargeting quality.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftToeBase'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightToeBase'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftHand'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightHand'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck'
+      has translation animation that will be discarded.\n\t'Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Head'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: PlayerCharacter_Rig(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char1
+      parentName: PlayerCharacter_Rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      parentName: PlayerCharacter_Rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Head
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 1.6063522, z: -0.065981194}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Hips
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 0.9017476, z: -0.024208069}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.19240524, y: 1.3972007, z: -0.073147394}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.15454409, y: 0.09116654, z: -0.09293461}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.31792247, y: 1.1586208, z: -0.05784912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.42589542, y: 0.9075899, z: -0.012801949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.12238525, y: 0.50056404, z: -0.06282707}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.0769621, y: 1.3972007, z: -0.073147394}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.17447479, y: 0.0028081362, z: 0.0080651315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:LeftUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0.08914016, y: 0.90289867, z: -0.021930236}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Neck
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 1.5228947, z: -0.07244818}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Reference
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: -0.007988637, z: -0.027116956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.19240524, y: 1.3972007, z: -0.073147394}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.15454409, y: 0.09116654, z: -0.09293461}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.31703755, y: 1.1586993, z: -0.05784912}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.42589542, y: 0.9075899, z: -0.012801949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.12238525, y: 0.50056404, z: -0.06282707}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.0769621, y: 1.3972007, z: -0.073147394}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.17447479, y: 0.0028081362, z: 0.0080651315}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: 0.08914016, y: 0.90289867, z: -0.021930236}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 1.0095648, z: -0.025517866}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine1
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 1.11663, z: -0.03588326}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Spine2
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides
+      position: {x: -0, y: 1.2236953, z: -0.04624865}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Reference
+      parentName: PlayerCharacter_Rig(Clone)
+      position: {x: -0, y: -0.007988637, z: -0.027116956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Reference
+      position: {x: -5.057803e-19, y: 0.9097362, z: 0.0029088878}
+      rotation: {x: 0.49695385, y: -0.5030277, z: -0.49695385, w: 0.5030277}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+      position: {x: -0.0011233683, y: 0.0022916473, z: 0.08914016}
+      rotation: {x: -0.040932063, y: 0.0026395621, z: 0.9979755, w: 0.048605658}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000004}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftUpLeg
+      position: {x: -0.40577206, y: 0.0000040220602, z: 0.0000001368771}
+      rotation: {x: -0.00059342146, y: -0.0019394035, z: -0.0020910609, w: 0.99999577}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftLeg
+      position: {x: -0.41176128, y: -0.000000098963795, z: -0.000000011264764}
+      rotation: {x: 0.050947934, y: -0.030812087, z: -0.45062536, w: -0.8907254}
+      scale: {x: 0.9999999, y: 1.0000004, z: 0.99999994}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftFoot
+      position: {x: -0.13566646, y: 0.000000007439945, z: -0.000000013585185}
+      rotation: {x: -0.0000000037252899, y: -0, z: 0.0000000047730278, w: 1}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000007}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+      position: {x: -0.0011233683, y: 0.0022916473, z: -0.08914016}
+      rotation: {x: 0.0026394727, y: 0.040932078, z: -0.04860531, w: 0.9979755}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000005}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightUpLeg
+      position: {x: 0.40577224, y: -0.0000026242446, z: -0.00000008913068}
+      rotation: {x: -0.0005933796, y: -0.0019394457, z: -0.0020913198, w: 0.9999958}
+      scale: {x: 0.9999996, y: 0.99999964, z: 0.99999994}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightLeg
+      position: {x: 0.41176078, y: -0.00000009635154, z: -0.00000019271867}
+      rotation: {x: -0.050947864, y: 0.030812107, z: 0.4506253, w: 0.89072543}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightFoot
+      position: {x: 0.13566646, y: -0.0000000074399455, z: 0.00000001558484}
+      rotation: {x: 0.000025384124, y: -0.000000014901159, z: 0.00000004936009, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Hips
+      position: {x: -0.10782511, y: 0.0000000011229879, z: -2.365115e-17}
+      rotation: {x: 0.000000029802326, y: -0.000000029802326, z: 0.04217008, w: 0.99911046}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine
+      position: {x: -0.10756595, y: 0.0000000094819255, z: -4.836702e-17}
+      rotation: {x: -1.776357e-15, y: 1.776357e-15, z: -0.0000000037252896, w: 1}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1.0000005}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine1
+      position: {x: -0.10756591, y: -0.000000008402824, z: -5.2573823e-17}
+      rotation: {x: -0.000000028661034, y: 0.000000030901493, z: -0.004585117, w: 0.9999895}
+      scale: {x: 1.0000006, y: 1.0000006, z: 1.0000001}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+      position: {x: -0.17519046, y: -0.011661048, z: 0.0769621}
+      rotation: {x: -0.47769457, y: 0.521352, z: 0.47769457, w: 0.521352}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftShoulder
+      position: {x: -0.11544316, y: 2.842171e-16, z: 0}
+      rotation: {x: 0.73235476, y: 0.012740222, z: 0.010404822, w: 0.6807246}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftArm
+      position: {x: -0.2700168, y: -0.00000005233675, z: 0.00000005806868}
+      rotation: {x: 0.12205365, y: 0.0054012192, z: -0.029373914, w: 0.9920741}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.0000017}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_LeftForeArm
+      position: {x: -0.2769548, y: 0.0000000923808, z: -0.000000110687495}
+      rotation: {x: -0.00000014156102, y: -0.00000002235174, z: -0.000000107800574,
+        w: 1}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000012}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+      position: {x: -0.17519046, y: -0.011661048, z: -0.0769621}
+      rotation: {x: 0.52135205, y: 0.47769457, z: -0.521352, w: 0.47769457}
+      scale: {x: 1.0000002, y: 1.0000013, z: 1.0000013}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightShoulder
+      position: {x: 0.11544316, y: 0, z: -3.5527136e-17}
+      rotation: {x: -0.7326083, y: -0.012690168, z: -0.010355743, w: -0.6804534}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000002}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightArm
+      position: {x: 0.26953718, y: -0.0000000018098546, z: -0.000000040060726}
+      rotation: {x: 0.120396405, y: 0.0047087763, z: -0.029999685, w: 0.99226135}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_RightForeArm
+      position: {x: 0.27737206, y: -0.000000027127866, z: 0.00000002954226}
+      rotation: {x: -0.000000029802315, y: -0.00000005029141, z: -0.000000008614732,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Spine2
+      position: {x: -0.30034432, y: -0.00000008241579, z: -1.4445717e-16}
+      rotation: {x: 0.000000030901493, y: 0.000000028661036, z: -0.08224528, w: 0.99661213}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000002}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Head
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Neck
+      position: {x: -0.08370794, y: 0.00000008144408, z: -4.3364335e-17}
+      rotation: {x: -3.5527137e-15, y: -0, z: -8.8566877e-16, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      parentName: PlayerCharacter_Rig(Clone)
+      position: {x: -0, y: -0.007988637, z: -0.027116956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HipsEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0, y: 0.91088736, z: 0.00518672}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftAnkleEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.1545503, y: 0.099078216, z: -0.065824404}
+      rotation: {x: 1.1188966e-16, y: -1.7347235e-16, z: 5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightAnkleEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.1545503, y: 0.099078365, z: -0.06582442}
+      rotation: {x: -2.879641e-16, y: 6.2450045e-17, z: 8.326673e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftWristEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.22737922, y: 0.8783783, z: 0.064965315}
+      rotation: {x: -0.09738866, y: -0.040062632, z: 0.21019863, w: 0.9719707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightWristEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.25617585, y: 0.8751551, z: 0.017858695}
+      rotation: {x: -0.009089588, y: 0.100454144, z: -0.18271491, w: 0.97797835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftKneeEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.12239526, y: 0.5079476, z: -0.029237024}
+      rotation: {x: 0.007909108, y: -0.000113718495, z: -0.0000046932005, w: 0.99996877}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightKneeEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.12239542, y: 0.5079445, z: -0.029199585}
+      rotation: {x: 0.007957448, y: 0.00011426225, z: 0.0000044873223, w: 0.99996835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftElbowEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.22453399, y: 1.1397614, z: -0.026537482}
+      rotation: {x: -0.04827395, y: 0.18614487, z: 0.14932296, w: 0.9699085}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightElbowEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.24497676, y: 1.1448534, z: -0.045949396}
+      rotation: {x: 0.020218812, y: -0.23999408, z: -0.13011663, w: 0.96180236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestOriginEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -7.966138e-19, y: 1.0175533, z: 0.00159909}
+      rotation: {x: 0.0106796, y: -1.0979415e-16, z: -2.1080482e-16, w: 0.99994296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_ChestEndEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0, y: 1.4077208, z: -0.017891126}
+      rotation: {x: 0.053373773, y: 8.90879e-18, z: -1.141198e-16, w: 0.9985746}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFootEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.17448099, y: 0.010719816, z: 0.03517533}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFootEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.17448102, y: 0.010719968, z: 0.035175323}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulderEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.19240533, y: 1.4077208, z: -0.017891126}
+      rotation: {x: 0.022525301, y: -0.07644548, z: 0.18166159, w: 0.98012644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulderEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.19240533, y: 1.4077208, z: -0.017891126}
+      rotation: {x: 0.0796963, y: 0.015504151, z: -0.14137426, w: 0.98662126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_HeadEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -3.0953094e-18, y: 1.6148776, z: 0.011888212}
+      rotation: {x: 0.05351315, y: 9.217889e-18, z: -1.1413995e-16, w: 0.99856716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHipEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -0.08914016, y: 0.91088736, z: 0.00518672}
+      rotation: {x: -0.007988715, y: 0.000639488, z: 0.000047567723, w: 0.9999679}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHipEffector
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: 0.08914016, y: 0.91088736, z: 0.00518672}
+      rotation: {x: -0.008034025, y: -0.00064310955, z: -0.000047591864, w: 0.9999675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Reference
+      position: {x: -5.057803e-19, y: 0.9097362, z: 0.0029088878}
+      rotation: {x: 1.4163847e-16, y: 1.110223e-16, z: -1.5725029e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+      position: {x: -0.08914016, y: 0.001151123, z: 0.002277832}
+      rotation: {x: -0.007989757, y: 0.0006395685, z: 0.000047584028, w: 0.9999679}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftUpLeg
+      position: {x: -0.033245087, y: -0.40233463, z: -0.04089684}
+      rotation: {x: 0.015899159, y: -0.0007536083, z: -0.000048121132, w: 0.99987334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftLeg
+      position: {x: -0.032158833, y: -0.40939754, z: -0.030107532}
+      rotation: {x: -0.007909908, y: 0.00011372445, z: 0.000004689045, w: 0.9999687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftFoot
+      position: {x: -0.019930705, y: -0.08835841, z: 0.100999735}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightUpLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+      position: {x: 0.08914016, y: 0.001151123, z: 0.002277832}
+      rotation: {x: -0.008032148, y: -0.0006429578, z: -0.000047585865, w: 0.9999676}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightLeg
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightUpLeg
+      position: {x: 0.033245087, y: -0.40233463, z: -0.04089684}
+      rotation: {x: 0.015987063, y: 0.00075750577, z: 0.000047871654, w: 0.9998719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFoot
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightLeg
+      position: {x: 0.032158833, y: -0.40939754, z: -0.030107532}
+      rotation: {x: -0.007955426, y: -0.0001142294, z: -0.00000448493, w: 0.99996835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightToeBase
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightFoot
+      position: {x: 0.019930705, y: -0.08835841, z: 0.100999735}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Hips
+      position: {x: 2.9582282e-32, y: 0.10781715, z: -0.0013097977}
+      rotation: {x: 0.01080384, y: 7.1564e-17, z: -5.991435e-17, w: 0.99994165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine1
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine
+      position: {x: -3.549874e-32, y: 0.107065275, z: -0.010365393}
+      rotation: {x: 0.021606488, y: 3.594328e-18, z: -1.1231326e-16, w: 0.9997666}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine1
+      position: {x: -3.9443044e-33, y: 0.107065275, z: -0.01036539}
+      rotation: {x: 0.021606484, y: 6.672747e-17, z: -8.66791e-18, w: 0.9997666}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+      position: {x: -0.0769621, y: 0.17350547, z: -0.026898742}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftShoulder
+      position: {x: -0.11544314, y: 0, z: -8.881784e-18}
+      rotation: {x: -0.030399779, y: -0.066477075, z: 0.18556121, w: 0.9799101}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftArm
+      position: {x: -0.12551723, y: -0.23857985, z: 0.015298271}
+      rotation: {x: -0.023703707, y: 0.26778436, z: -0.030116193, w: 0.9627163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_LeftForeArm
+      position: {x: -0.10797294, y: -0.25103095, z: 0.04504717}
+      rotation: {x: -0.092323475, y: -0.2146466, z: 0.038520265, w: 0.9715552}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulder
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+      position: {x: 0.0769621, y: 0.17350547, z: -0.026898742}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightShoulder
+      position: {x: 0.11544314, y: 0, z: -8.881784e-18}
+      rotation: {x: 0.026465537, y: 0.0078039127, z: -0.14203611, w: 0.98947686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightForeArm
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightArm
+      position: {x: 0.12463232, y: -0.2385015, z: 0.015298271}
+      rotation: {x: -0.020635806, y: -0.25868294, z: 0.02690592, w: 0.965367}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightHand
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_RightForeArm
+      position: {x: 0.108857855, y: -0.2511093, z: 0.04504717}
+      rotation: {x: -0.085267715, y: 0.3260548, z: -0.0482299, w: 0.9402614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Neck
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Spine2
+      position: {x: 1.5777218e-32, y: 0.29919943, z: -0.026199527}
+      rotation: {x: 0.0000074081795, y: -2.5800071e-17, z: -1.1302289e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Head
+      parentName: Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Ctrl_Neck
+      position: {x: -1.08468374e-32, y: 0.083457485, z: 0.0064669847}
+      rotation: {x: 1.4163847e-16, y: 1.110223e-16, z: -1.5725029e-32, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 040c6dec52f6b074f9f9215eaa1ce238,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
