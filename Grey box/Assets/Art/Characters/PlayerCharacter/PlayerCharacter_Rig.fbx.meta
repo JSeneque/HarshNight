@@ -217,7 +217,8 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
+    extraExposedTransformPaths:
+    - Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:HarshNight_Char_Guides/Scale5Foot:Scale5Foot:Scale5Foot:Scale5Foot:RightHand
     extraUserProperties: []
     clipAnimations: []
     isReadable: 1
