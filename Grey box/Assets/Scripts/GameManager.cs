@@ -68,17 +68,17 @@ public class GameManager : MonoBehaviour
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
 
-        // check if it is a tutorial
-        if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
-        {
+        //// check if it is a tutorial
+        //if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
+        //{
             isTutorialMode = true;
 
             // start the player instructions
             StartCoroutine(StartTutorialInstructions(3.0f));
-        }
+        //}
 
-        else
-            isTutorialMode = false;
+        //else
+        //    isTutorialMode = false;
 
     }
 

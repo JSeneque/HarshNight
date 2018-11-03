@@ -190,35 +190,6 @@ RectTransform:
   m_AnchoredPosition: {x: 133.555, y: 6}
   m_SizeDelta: {x: 99.309975, y: 5.6999283}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &86923318 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1592864760096290, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-    type: 2}
-  m_PrefabInternal: {fileID: 1526566622}
---- !u!65 &86923323
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 86923318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: -12, y: -1.8, z: -8.72}
---- !u!135 &86923324
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 86923318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.28
-  m_Center: {x: -12, y: -1.8, z: -8.72}
 --- !u!1 &105807351
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,31 +7664,6 @@ Prefab:
     - target: {fileID: 4897381550703252, guid: 12f4c426c219c9b4687afd3ac6e42e00, type: 2}
       propertyPath: m_RootOrder
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 65206631512819384, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65206631512819384, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65206631512819384, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65206631512819384, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65206631512819384, guid: 12f4c426c219c9b4687afd3ac6e42e00,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f4c426c219c9b4687afd3ac6e42e00, type: 2}

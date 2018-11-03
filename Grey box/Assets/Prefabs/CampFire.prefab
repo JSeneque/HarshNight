@@ -56,6 +56,8 @@ GameObject:
   - component: {fileID: 65206631512819384}
   - component: {fileID: 114405576946588366}
   - component: {fileID: 82494132777939546}
+  - component: {fileID: 65422970166311320}
+  - component: {fileID: 135157510153149588}
   m_Layer: 0
   m_Name: CampFire
   m_TagString: Campfire
@@ -156,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1592864760096290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.93, y: 1.734835, z: 9.35}
+  m_LocalPosition: {x: 8.24, y: 1.734835, z: 9.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4554068620028944}
@@ -257,8 +259,20 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1592864760096290}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: -12, y: -1.8, z: -8.72}
+--- !u!65 &65422970166311320
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592864760096290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3, y: 1, z: 3}
   m_Center: {x: -12, y: -1.8, z: -8.72}
@@ -374,7 +388,20 @@ MonoBehaviour:
   flameSize: 0.4
   maxSmokeSize: 3
   volume: 0
+  warmthZoneModifier: 0.5
   disableHealth: 0
+--- !u!135 &135157510153149588
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1592864760096290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.28
+  m_Center: {x: -12, y: -1.8, z: -8.72}
 --- !u!198 &198891799217082428
 ParticleSystem:
   m_ObjectHideFlags: 1
