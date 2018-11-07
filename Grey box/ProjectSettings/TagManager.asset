@@ -11,6 +11,7 @@ TagManager:
   - MeatRaw
   - MeatCooked
   - GameManager
+  - Highlight
   layers:
   - Default
   - TransparentFX
