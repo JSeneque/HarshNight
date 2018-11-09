@@ -19,11 +19,8 @@ public class Tree2 : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		if (health <= 0) {
-            //rb.isKinematic = false;
-            //rb.AddForce(transform.forward * speed);
-            //StartCoroutine(DestroyTree(destroyTreeDelay));
             StartCoroutine(TreeFall(treeFallDelay));
         }
 	}
@@ -48,6 +45,11 @@ public class Tree2 : MonoBehaviour {
     IEnumerator TreeFall(float time)
     {
         yield return new WaitForSeconds(time);
+
+        // remove highlighting object
+        GameObject child = gameObject.transform.GetChild(0).gameObject;
+        Destroy(child);
+
         rb.isKinematic = false;
         rb.AddForce(transform.forward * speed);
         StartCoroutine(DestroyTree(destroyTreeDelay));
