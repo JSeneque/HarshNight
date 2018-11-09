@@ -12,6 +12,7 @@ public class CampFire : MonoBehaviour
     public float maxSmokeSize = 3.0f;
     public float volume;
     public float warmthZoneModifier = 0.5f;
+    public GameObject warmthIndicator;
 
     // make true if you do not want the health to lower over time
     public bool disableHealth = false;
@@ -86,6 +87,7 @@ public class CampFire : MonoBehaviour
 
             // adjust the warmth zone
             warmthZone.radius = health + warmthZoneModifier;
+            warmthIndicator.transform.localScale= new Vector3(warmthZone.radius+warmthZoneModifier, warmthIndicator.transform.localScale.y, warmthZone.radius + warmthZoneModifier);
 
             // if fire is out and smoke is at it's highest,
             // time to lower the smoke intensity 
@@ -119,15 +121,15 @@ public class CampFire : MonoBehaviour
     //    }
     //}
 
-    private void OnTriggerStay(Collider other)
-    {
-        // check if player has enter the warmth zone
-        if (other.tag == "Player")
-        {
-            Debug.Log("Player has enter the warmth zone");
-            // add warmth to player
-            other.GetComponent<PlayerVitals>().IncreaseWarmth(5.0f);
-        }
-    }
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    // check if player has enter the warmth zone
+    //    if (other.tag == "Player")
+    //    {
+    //        Debug.Log("Player has enter the warmth zone");
+    //        // add warmth to player
+    //        other.GetComponent<PlayerVitals>().IncreaseWarmth(5.0f);
+    //    }
+    //}
 
 }
