@@ -6,10 +6,12 @@ public class ItemClickHandler : MonoBehaviour {
     public float healthIncrease = 20.0f;
     private GameObject player;
     private GameObject inventory;
+    private GameObject gameManager;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
 
 
@@ -29,10 +31,20 @@ public class ItemClickHandler : MonoBehaviour {
 
             // need to work out which slot the meat was in to free it up.
             // as a quick fix, all invetory to check if there is no child
-            GameObject inventory = GameObject.FindGameObjectWithTag("Inventory");
-            
-            // for each shild of inventory, does it have a child
-            // player.GetComponent<Inventory>().
+            //GameObject inventory = GameObject.FindGameObjectWithTag("Inventory");
+
+            // if in tutorial mode, send event
+            if (gameManager.GetComponent<GameManager>().IsTutorialMode())
+            {
+                EventManager.TriggerEvent("Exit02");
+
+                // find the boulder
+                GameObject boulder = GameObject.Find("Exit02");
+
+                // play the sound
+                AudioSource audio = boulder.GetComponent<AudioSource>();
+                audio.Play();
+            }
         }
     }
 }

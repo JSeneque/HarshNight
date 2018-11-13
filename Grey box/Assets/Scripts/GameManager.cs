@@ -68,17 +68,11 @@ public class GameManager : MonoBehaviour
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
 
-        //// check if it is a tutorial
-        //if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
-        //{
-            isTutorialMode = true;
+        isTutorialMode = true;
 
-            // start the player instructions
-            StartCoroutine(StartTutorialInstructions(3.0f));
-        //}
+        // start the player instructions
+        StartCoroutine(StartTutorialInstructions(3.0f));
 
-        //else
-        //    isTutorialMode = false;
 
     }
 
@@ -99,7 +93,6 @@ public class GameManager : MonoBehaviour
         //gameOverText.enabled = true;
 
         Debug.Log("GameManager.GameOver() called");
-        //Invoke("Restart", restartDelay);
         Restart();
     }
 

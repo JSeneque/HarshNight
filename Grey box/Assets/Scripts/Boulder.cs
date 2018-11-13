@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Boulder : MonoBehaviour {
     private Animator animator;
+
     // Use this for initialization
 
     
 
     private void Awake()
     {
-        EventManager.StartListening("LowerBoulder1", Lower);
+        EventManager.StartListening(gameObject.name, Lower);
     }
 
     void Start () {

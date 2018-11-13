@@ -67,10 +67,10 @@ public class InputController : MonoBehaviour {
                                 // if in tutorial mode, send event
                                 if (gameManager.GetComponent<GameManager>().IsTutorialMode())
                                 {
-                                    EventManager.TriggerEvent("LowerBoulder1");
+                                    EventManager.TriggerEvent("Exit01");
 
                                     // find the boulder
-                                    GameObject boulder = GameObject.Find("Entry01");
+                                    GameObject boulder = GameObject.Find("Exit01");
 
                                     // play the sound
                                     AudioSource audio = boulder.GetComponent<AudioSource>();

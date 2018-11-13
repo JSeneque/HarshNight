@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65202729031395480}
   - component: {fileID: 195836625238834128}
   - component: {fileID: 114829463089070808}
+  - component: {fileID: 114679494719902784}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Untagged
@@ -98,6 +99,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.40940168, y: 0.27017927, z: 0.1546646}
   m_Center: {x: 0.037577823, y: 0.13508964, z: 0}
+--- !u!114 &114679494719902784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716145660387218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2c68ef96a92e24cba7d4de6b651d2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    sentences:
+    - I don't think raw meat would be that good, I should go cook this on the fire
 --- !u!114 &114829463089070808
 MonoBehaviour:
   m_ObjectHideFlags: 1
