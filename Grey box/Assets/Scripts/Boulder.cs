@@ -5,11 +5,12 @@ using UnityEngine;
 public class Boulder : MonoBehaviour {
     private Animator animator;
     // Use this for initialization
+
     
 
     private void Awake()
     {
-        EventManager.StartListening("LowerBoulder", Lower);
+        EventManager.StartListening("LowerBoulder1", Lower);
     }
 
     void Start () {
@@ -18,6 +19,7 @@ public class Boulder : MonoBehaviour {
 	
 	void Lower()
     {
+        // play sound
         animator.SetBool("LowerBoulder", true);
     }
 }

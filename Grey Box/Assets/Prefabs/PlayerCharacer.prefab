@@ -521,6 +521,7 @@ GameObject:
   - component: {fileID: 95406162582337316}
   - component: {fileID: 54262030452364004}
   - component: {fileID: 136227427973560496}
+  - component: {fileID: 114589674174500176}
   m_Layer: 0
   m_Name: PlayerCharacer
   m_TagString: Untagged
@@ -2513,7 +2514,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1363614336765440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.18241, y: 3.5079083, z: 6.847458}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4082583459091940}
@@ -2852,6 +2853,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114589674174500176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363614336765440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e34c072bffac8e4894eedd5e2d7c023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navMeshAgent: {fileID: 0}
+  isWalking: 0
 --- !u!136 &136227427973560496
 CapsuleCollider:
   m_ObjectHideFlags: 1
