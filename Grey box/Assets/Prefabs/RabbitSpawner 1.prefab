@@ -505,7 +505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4103871414016618}
   m_Layer: 0
-  m_Name: RabbitSpawner
+  m_Name: RabbitSpawner 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
