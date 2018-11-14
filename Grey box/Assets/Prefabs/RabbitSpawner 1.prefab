@@ -504,6 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4103871414016618}
+  - component: {fileID: 64837074539910042}
   m_Layer: 0
   m_Name: RabbitSpawner 1
   m_TagString: Untagged
@@ -2387,3 +2388,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1397377056251498}
   m_Mesh: {fileID: 4300000, guid: 600998a28426d604b80b2ea99eae3fa8, type: 3}
+--- !u!64 &64837074539910042
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593561826337830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
