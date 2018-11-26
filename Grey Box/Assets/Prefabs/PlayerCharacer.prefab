@@ -521,10 +521,11 @@ GameObject:
   - component: {fileID: 95406162582337316}
   - component: {fileID: 54262030452364004}
   - component: {fileID: 136227427973560496}
-  - component: {fileID: 114589674174500176}
+  - component: {fileID: 114501419609377964}
+  - component: {fileID: 114552604937088842}
   m_Layer: 0
   m_Name: PlayerCharacer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2514,7 +2515,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1363614336765440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.3770247, y: 5.8701e-17, z: -2.643658}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4082583459091940}
@@ -2813,7 +2814,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
@@ -2853,7 +2854,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114589674174500176
+--- !u!114 &114501419609377964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2861,11 +2862,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363614336765440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e34c072bffac8e4894eedd5e2d7c023, type: 3}
+  m_Script: {fileID: 11500000, guid: aff680f2bbb29384d884c6218ce82285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navMeshAgent: {fileID: 0}
-  isWalking: 0
+  speed: 4
+  turnSpeed: 45
+  turnSmoothing: 15
+--- !u!114 &114552604937088842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363614336765440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112878f7279f9d84c8cc3eabd28d3488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 00000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!136 &136227427973560496
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2875,10 +2894,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 52baaeb214519f347a35cf0edfd262ff, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.33
-  m_Height: 2
+  m_Radius: 0.3
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!137 &137428573675702486
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
