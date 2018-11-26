@@ -5,9 +5,6 @@ using UnityEngine;
 public class InputController : MonoBehaviour {
     public float radius = 10.0f;
 
-    public AudioClip choppingSound;
-    public AudioSource source;
-
     private Inventory inventory;
     private GameObject player;
     private GameObject campFire;
@@ -20,7 +17,6 @@ public class InputController : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
-        source.clip = choppingSound;
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
     // Update is called once per frame

@@ -88,7 +88,7 @@ public class DialogueManager : MonoBehaviour {
 
     public IEnumerator FadeTextToFullAlpha(float t)
     {
-        Debug.Log("FadeTextToFullAlpha");
+        //Debug.Log("FadeTextToFullAlpha");
         dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 0);
         continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, 0);
         textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, 0);
@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour {
 
     public IEnumerator FadeTextToZeroAlpha(float t)
     {
-        Debug.Log("FadeTextToZeroAlpha");
+        //Debug.Log("FadeTextToZeroAlpha");
         dialogueText.color = new Color(dialogueText.color.r, dialogueText.color.g, dialogueText.color.b, 1);
         continueButton.color = new Color(continueButton.color.r, continueButton.color.g, continueButton.color.b, 1);
         textBg.color = new Color(textBg.color.r, textBg.color.g, textBg.color.b, 0.5f);

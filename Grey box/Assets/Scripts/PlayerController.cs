@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public AudioClip choppingSound;
     public AudioSource source;
 
+    public GameObject axeInHand;
+    public GameObject axeOnBack;
+
     private Inventory inventory;
     private GameObject player;
     private GameObject campFire;
@@ -18,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float choppingTime = 4;
     private Animator anim;
     private Rigidbody rb;
+    
 
     private void Awake()
     {
@@ -45,8 +49,16 @@ public class PlayerController : MonoBehaviour
             foreach (Collider col in hitColliders)
             {
                 // if the player is near a tree, start chopping
-                if (col.gameObject.tag == "Tree")
+                if (col.gameObject.tag == "Tree" && axeOnBack.activeSelf)
                 {
+                    // force the player to face towards the tree
+
+                    // try to diable the player from moving during the chopping animation
+
+                    // put axe in hand
+                    axeOnBack.SetActive(false);
+                    axeInHand.SetActive(true);
+
                     // animate the player chopping
                     anim.SetBool("Chop", true);
                     StartCoroutine(Chopping(choppingTime));
@@ -55,9 +67,25 @@ public class PlayerController : MonoBehaviour
 
                     source.Play();
                     col.gameObject.GetComponent<Tree2>().ChopMe();
+                    break;
+                }
+
+                // if the player is near the axe, grab it
+                // disable the axe in the stump or destroy it
+                // enable the axe on the player's back
+                if (col.gameObject.tag == "Axe")
+                {
+                    
+
+                    // pick up animation
+                    anim.SetBool("PickUp", true);
+
+                    StartCoroutine(PickupAxe(1.0f, col.gameObject));
+                    
+
+                    break;
                 }
             }
-
         }
     }
 
@@ -67,6 +95,26 @@ public class PlayerController : MonoBehaviour
 
         // stop the chopping animation
         anim.SetBool("Chop", false);
+        axeOnBack.SetActive(true);
+        axeInHand.SetActive(false);
+    }
+
+    IEnumerator PickupAxe(float time, GameObject gameObject)
+    {
+        yield return new WaitForSeconds(time);
+
+        if (gameObject.tag == "Axe")
+        {
+            // activate the axe on back
+            // can put in a delay later
+            axeOnBack.SetActive(true);
+
+            // destroy axe in stump
+            Destroy(gameObject);
+
+            anim.SetBool("PickUp", false);
+        }
+        
     }
 
 }

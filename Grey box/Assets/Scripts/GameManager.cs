@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     public void CookMeat(int slot)
     {
-        Debug.Log("Cooked the meat in slot ");
+        //Debug.Log("Cooked the meat in slot ");
 
         GameObject child = inventory.slots[slot].gameObject.transform.GetChild(0).gameObject;
         Destroy(child);
