@@ -6,61 +6,67 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-    //private Animator anim;
-    //public NavMeshAgent navMeshAgent;
-    //public bool isWalking;
+    public float radius = 10.0f;
 
-    //private CharacterController _controller;
+    public AudioClip choppingSound;
+    public AudioSource source;
 
-    //public float movementSpeed;
-
-    //void Start()
-    //{
-    //    //_controller = GetComponent<CharacterController>();
-    //    anim = GetComponent<Animator>();
-    //    navMeshAgent = GetComponent<NavMeshAgent>();
-    //}
-
-    //void Update()
-    //{
-    //    //Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-    //    //_controller.Move(move * Time.deltaTime * movementSpeed);
-    //    //if (move != Vector3.zero)
-    //    //    transform.forward = move;
-    //    //if(navMeshAgent.velocity != Vector3.zero)
-    //    //{
-    //    //    isWalking = true;
-    //    //} else
-    //    //{
-    //    //    isWalking = false;
-    //    //}
-
-    //    var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
-    //    var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
-
-    //    transform.Rotate(0, x, 0);
-    //    transform.Translate(0, 0, z);
-
-    //    anim.SetBool("IsWalking", isWalking);
-
-    //}
-    public float speed;
-
+    private Inventory inventory;
+    private GameObject player;
+    private GameObject campFire;
+    public GameObject gameManager;
+    public float choppingTime = 4;
+    private Animator anim;
     private Rigidbody rb;
 
-
-    void Start()
+    private void Awake()
     {
+        // get the componments
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Start()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-        rb.AddForce(movement * speed);
+        player = GameObject.FindGameObjectWithTag("Player");
+        campFire = GameObject.FindGameObjectWithTag("Campfire");
+        inventory = player.GetComponent<Inventory>();
+        source.clip = choppingSound;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetKeyUp("e"))
+        {
+            Collider[] hitColliders = Physics.OverlapSphere(player.transform.position, radius);
+
+            foreach (Collider col in hitColliders)
+            {
+                // if the player is near a tree, start chopping
+                if (col.gameObject.tag == "Tree")
+                {
+                    // animate the player chopping
+                    anim.SetBool("Chop", true);
+                    StartCoroutine(Chopping(choppingTime));
+
+
+
+                    source.Play();
+                    col.gameObject.GetComponent<Tree2>().ChopMe();
+                }
+            }
+
+        }
+    }
+
+    IEnumerator Chopping(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // stop the chopping animation
+        anim.SetBool("Chop", false);
+    }
+
 }
