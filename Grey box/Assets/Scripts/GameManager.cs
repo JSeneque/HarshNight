@@ -115,4 +115,9 @@ public class GameManager : MonoBehaviour
     {
         return isTutorialMode;
     }
+
+    public void SetTutorialMode(bool mode)
+    {
+        isTutorialMode = mode;
+    }
 }
