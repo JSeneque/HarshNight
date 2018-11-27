@@ -7,12 +7,16 @@ public class Enemy : MonoBehaviour {
     public int health;
     public float speed = 3.0f;
     public float pursueDistance = 5.0f;
+    public GameObject explosion;
 
     private Transform player;
+
+    private Animator cameraAnim;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        cameraAnim = Camera.main.GetComponent<Animator>();
 	}
 
     public void TakeDamage(int amount)
@@ -22,7 +26,11 @@ public class Enemy : MonoBehaviour {
         // check if enemy is dead
         if (health <= 0)
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            cameraAnim.SetTrigger("Shake");
             Destroy(this.gameObject);
+            
+
         }
     }
 

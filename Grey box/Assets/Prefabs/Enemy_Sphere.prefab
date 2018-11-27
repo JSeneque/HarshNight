@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114115033216427676}
   m_Layer: 0
   m_Name: Enemy_Sphere
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,7 @@ MonoBehaviour:
   health: 10
   speed: 2
   pursueDistance: 5
+  explosion: {fileID: 1152720173000622, guid: 9fe08a51c099c0643b225e018f89d3cb, type: 2}
 --- !u!135 &135876239950285660
 SphereCollider:
   m_ObjectHideFlags: 1

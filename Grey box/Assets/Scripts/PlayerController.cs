@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     private GameObject campFire;
     public GameObject gameManager;
     public float choppingTime = 4;
+    public int attackdamage = 2;
+
+
     private Animator anim;
     private Rigidbody rb;
     
@@ -56,8 +59,7 @@ public class PlayerController : MonoBehaviour
                     // try to diable the player from moving during the chopping animation
 
                     // put axe in hand
-                    axeOnBack.SetActive(false);
-                    axeInHand.SetActive(true);
+                    SwapAxe();
 
                     // animate the player chopping
                     anim.SetBool("Chop", true);
@@ -85,6 +87,22 @@ public class PlayerController : MonoBehaviour
 
                     break;
                 }
+
+                if (col.gameObject.tag == "Enemy")
+                {
+                    // take out axe
+                    SwapAxe();
+
+                    // run the attack animation
+                    anim.SetTrigger("Attack");
+
+                    // damage enemy
+                    Enemy EnemyScript = col.gameObject.GetComponent<Enemy>();
+                    EnemyScript.TakeDamage(attackdamage);
+
+
+                    break;
+                }
             }
         }
     }
@@ -95,8 +113,7 @@ public class PlayerController : MonoBehaviour
 
         // stop the chopping animation
         anim.SetBool("Chop", false);
-        axeOnBack.SetActive(true);
-        axeInHand.SetActive(false);
+        SwapAxe();
     }
 
     IEnumerator PickupAxe(float time, GameObject gameObject)
@@ -113,6 +130,21 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
 
             anim.SetBool("PickUp", false);
+        }
+        
+    }
+
+    void SwapAxe()
+    {
+        // put axe in hand
+        if (axeOnBack.activeSelf)
+        {
+            axeOnBack.SetActive(false);
+            axeInHand.SetActive(true);
+        } else
+        {
+            axeOnBack.SetActive(true);
+            axeInHand.SetActive(false);
         }
         
     }

@@ -12,6 +12,7 @@ TagManager:
   - MeatCooked
   - GameManager
   - Highlight
+  - Enemy
   layers:
   - Default
   - TransparentFX
