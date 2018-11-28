@@ -48,7 +48,6 @@ public class InputController : MonoBehaviour {
                             
                             // determine the itemButton in inventory
                             GameObject child = inventory.slots[i].gameObject.transform.GetChild(0).gameObject;
-                            //Debug.Log("Slot has something a " + child.tag);
 
                             // if the item is a firewood then add to campfire
                             if (child.tag == "Firewood")
@@ -56,7 +55,6 @@ public class InputController : MonoBehaviour {
                                 // empty slot
                                 Destroy(child);
                                 inventory.isFull[i] = false;
-                                //Debug.Log("Destroy firewood from slot " + i);
                                 // react campfire
                                 campFire.GetComponent<CampFire>().AddFirewood();
 

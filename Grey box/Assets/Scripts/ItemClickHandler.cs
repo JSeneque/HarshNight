@@ -31,7 +31,23 @@ public class ItemClickHandler : MonoBehaviour {
 
             // need to work out which slot the meat was in to free it up.
             // as a quick fix, all invetory to check if there is no child
-            //GameObject inventory = GameObject.FindGameObjectWithTag("Inventory");
+            Inventory inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                // check that the slot is marked as full
+                if (inventory.isFull[i] == true)
+                {
+                    GameObject child = inventory.slots[i].gameObject.transform.GetChild(0).gameObject;
+
+                    // if there is actually nothing in there, free it up
+                    if (child == null)
+                    {
+                        inventory.isFull[i] = false;
+                    }
+                    break;
+                }
+            }
 
             // if in tutorial mode, send event
             if (gameManager.GetComponent<GameManager>().IsTutorialMode())
