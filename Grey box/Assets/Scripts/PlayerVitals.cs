@@ -127,7 +127,7 @@ public class PlayerVitals : MonoBehaviour {
     private void IsDead()
     {
         if (currentHealth == 0 || currentWarmth == 0)
-            FindObjectOfType<GameManager>().GameOver();
+            FindObjectOfType<SceneTransitions>().LoadScene("End");
         
     }
 
