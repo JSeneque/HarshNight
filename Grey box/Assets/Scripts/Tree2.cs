@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Tree2 : MonoBehaviour {
-    public int health = 5;
+    //public int health = 5;
     public int speed = 8;
     public int logs = 4;
     public int destroyTreeDelay = 5;
     public int treeFallDelay = 4;
+    public GameObject highlighter;
 
+    // stores the prefab for the firewood
     public GameObject log;
+
     private Rigidbody rb;
 
 	// Use this for initialization
@@ -19,11 +22,11 @@ public class Tree2 : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (health <= 0) {
-            StartCoroutine(TreeFall(treeFallDelay));
-        }
-	}
+	//void Update () {
+	//	if (health <= 0) {
+ //           StartCoroutine(TreeFall(treeFallDelay));
+ //       }
+	//}
 
     IEnumerator DestroyTree(float time)
     {
@@ -37,9 +40,10 @@ public class Tree2 : MonoBehaviour {
 
     public void ChopMe()
     {
-        health--;
-        if (health < 0)
-            health = 0;
+        //health--;
+        //if (health < 0)
+        //    health = 0;
+        StartCoroutine(TreeFall(treeFallDelay));
     }
 
     IEnumerator TreeFall(float time)
@@ -47,8 +51,8 @@ public class Tree2 : MonoBehaviour {
         yield return new WaitForSeconds(time);
 
         // remove highlighting object
-        GameObject child = gameObject.transform.GetChild(0).gameObject;
-        Destroy(child);
+        //GameObject child = gameObject.transform.GetChild(0).gameObject;
+        Destroy(highlighter);
 
         rb.isKinematic = false;
         rb.AddForce(transform.forward * speed);
