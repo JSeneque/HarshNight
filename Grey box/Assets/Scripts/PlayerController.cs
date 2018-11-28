@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
 
                     source.Play();
-                    col.gameObject.GetComponent<Tree2>().ChopMe();
+                    col.gameObject.GetComponent<Tree>().ChopMe();
                     break;
                 }
 

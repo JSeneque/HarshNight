@@ -1050,15 +1050,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114250933211201904, guid: 5f5a520dfbf9e5e49882c507f504ed04,
-        type: 2}
-      propertyPath: treeFallDelay
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1770797465209884, guid: 5f5a520dfbf9e5e49882c507f504ed04, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5a520dfbf9e5e49882c507f504ed04, type: 2}
   m_IsPrefabAsset: 0

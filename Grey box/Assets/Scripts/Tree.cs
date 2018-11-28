@@ -1,77 +1,61 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class Tree : MonoBehaviour//, IPointerClickHandler
-{
-    public int noOfChopsForWood = 3;
-    public int noOfWoodBeforeFell = 4;
-    public int speed = 8;
+public class Tree : MonoBehaviour {
+    public int speed = 20;
+    public int logs = 4;
     public int destroyTreeDelay = 5;
-    public GameObject fireWood;
+    public int treeFallDelay = 4;
+    public GameObject highlighter;
 
-    private int chops;
+    // stores the prefab for the firewood
+    public GameObject log;
+
     private Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
-        chops = noOfChopsForWood;
         rb = GetComponent<Rigidbody>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        if (noOfChopsForWood == 0)
-            resetChops();
 
-    }
+        // stops the tree from being pushed by player
+        rb.isKinematic = true;
+	}
 
-    void FixedUpdate()
-    {
-        if (noOfWoodBeforeFell <= 0) {
-            rb.isKinematic = false;
-            rb.AddForce(transform.forward * speed);
-            StartCoroutine(DestroyTree(destroyTreeDelay));
-
-        }
-    }
-
-    public void ChopMe()
-    {
-        noOfChopsForWood--;
-        if (noOfChopsForWood < 0)
-            noOfChopsForWood = 0;
-    }
-
-    void resetChops()
-    {
-        noOfChopsForWood = chops;   //remove this hardcoded value
-        // get the position of the respawn spot
-        GameObject respawn = getChildGameObject(this.gameObject, "LogSpawn");
-        // create a firewood
-         Instantiate(fireWood, respawn.transform.position, Quaternion.identity);
-        // fly it out of the tree
-        
-   
-
-        noOfWoodBeforeFell--;
-        if (noOfWoodBeforeFell <= 0) 
-            noOfWoodBeforeFell = 0;
-        
-    }
-
-    private GameObject getChildGameObject(GameObject fromGameObject, string withName)
-    {
-        Transform[] ts = fromGameObject.transform.GetComponentsInChildren<Transform>(true);
-        foreach (Transform t in ts) if (t.gameObject.name == withName) return t.gameObject;
-        return null;
-    }
 
     IEnumerator DestroyTree(float time)
     {
         yield return new WaitForSeconds(time);
+
+        // destory this tree
         Destroy(this.gameObject);
+
+        // the logs are to be dropped
+        Vector3 position = new Vector3(Random.Range(-1.0f, 1.0f), 0, Random.Range(-1.0f, 1.0f));
+        for (int i = 0; i < logs; i++)
+            Instantiate(log, this.gameObject.transform.position + new Vector3(0, 0, i ) + position , Quaternion.identity);
+
     }
 
+    public void ChopMe()
+    {
+        StartCoroutine(TreeFall(treeFallDelay));
+    }
+
+    IEnumerator TreeFall(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // remove highlighting object
+        Destroy(highlighter);
+
+        // allow force applied to tree to fall
+        rb.isKinematic = false;
+
+        // pushing force
+        rb.AddForce(transform.forward * speed);
+
+        // delay before destorying tree
+        StartCoroutine(DestroyTree(destroyTreeDelay));
+    }
 }
