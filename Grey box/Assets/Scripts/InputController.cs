@@ -7,7 +7,7 @@ public class InputController : MonoBehaviour {
 
     private Inventory inventory;
     private GameObject player;
-    private GameObject campFire;
+    //private GameObject campFire;
     public GameObject gameManager;
 
 
@@ -15,7 +15,7 @@ public class InputController : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        campFire = GameObject.FindGameObjectWithTag("Campfire");
+        //campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
     }
@@ -56,7 +56,8 @@ public class InputController : MonoBehaviour {
                                 Destroy(child);
                                 inventory.isFull[i] = false;
                                 // react campfire
-                                campFire.GetComponent<CampFire>().AddFirewood();
+                                //campFire.GetComponent<CampFire>().AddFirewood();
+                                col.gameObject.GetComponent<CampFire>().AddFirewood();
 
                                 // if in tutorial mode, send event
                                 if (gameManager.GetComponent<GameManager>().IsTutorialMode())
