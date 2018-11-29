@@ -88,14 +88,6 @@ public class InputController : MonoBehaviour {
                     }
                 }
 
-                // if the player is near a tree, start chopping
-                //if (col.gameObject.tag == "Tree")
-                //{
-                //    //source.PlayOneShot(choppingSound);
-                //    //Debug.Log("chopping sound");
-                //    source.Play();
-                //    col.gameObject.GetComponent<Tree2>().ChopMe();
-                //}
             }
 
         }

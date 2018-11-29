@@ -5,7 +5,7 @@ using UnityEngine;
 public class Slot : MonoBehaviour {
 
     private Inventory inventory;
-    public int i;
+    public int i = 0;
 
 	// Use this for initialization
 	void Start () {
