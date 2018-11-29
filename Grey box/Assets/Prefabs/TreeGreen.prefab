@@ -314,7 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   logs: 4
-  destroyTreeDelay: 4
+  destroyTreeDelay: 3
   treeFallDelay: 6
   highlighter: {fileID: 1885913853243370}
   log: {fileID: 1527284523102748, guid: eba3d1b286c3aaf46aabf54c9626c33d, type: 2}

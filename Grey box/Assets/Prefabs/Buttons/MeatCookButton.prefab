@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 222884818040325972}
   - component: {fileID: 114611658634990542}
   - component: {fileID: 114344718253024248}
-  - component: {fileID: 114672616072689654}
+  - component: {fileID: 114938254523254474}
   m_Layer: 5
   m_Name: MeatCookButton
   m_TagString: MeatCooked
@@ -69,8 +69,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114672616072689654}
-        m_MethodName: OnItemClicked
+      - m_Target: {fileID: 114938254523254474}
+        m_MethodName: Use
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114672616072689654
+--- !u!114 &114938254523254474
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1555476597874816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1c925ff13eec4146b4c4002ced723b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 07b572ddc2cf4f6418910dac2afc0895, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthIncrease: 50
