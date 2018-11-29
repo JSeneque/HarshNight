@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
     public float radius = 10.0f;
 
     public AudioClip choppingSound;
-    public AudioSource source;
+    public AudioClip attackSound;
+    private AudioSource audioSource;
 
     public GameObject axeInHand;
     public GameObject axeOnBack;
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject gameManager;
     public float choppingTime = 4;
     public int attackdamage = 2;
+    
 
 
     private Animator anim;
@@ -38,8 +40,11 @@ public class PlayerController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         campFire = GameObject.FindGameObjectWithTag("Campfire");
         inventory = player.GetComponent<Inventory>();
-        source.clip = choppingSound;
+        //source.clip = choppingSound;    // not sure why I did it this way???
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
+        audioSource = GetComponent<AudioSource>();
+
+        //attackSound = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -66,8 +71,7 @@ public class PlayerController : MonoBehaviour
                     StartCoroutine(Chopping(choppingTime));
 
 
-
-                    source.Play();
+                    audioSource.PlayOneShot(choppingSound, 0.25f);
                     col.gameObject.GetComponent<Tree>().ChopMe();
                     break;
                 }
@@ -95,6 +99,8 @@ public class PlayerController : MonoBehaviour
 
                     // run the attack animation
                     anim.SetTrigger("Attack");
+
+                    audioSource.PlayOneShot(attackSound, 0.5f);
 
                     // damage enemy
                     Enemy EnemyScript = col.gameObject.GetComponent<Enemy>();
