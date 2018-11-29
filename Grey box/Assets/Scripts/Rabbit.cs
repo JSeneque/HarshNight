@@ -16,13 +16,13 @@ public class Rabbit : MonoBehaviour {
     // the prefab for the raw meat
     public GameObject rawMeat;
     public float untouchable = 1.0f;
-    private GameObject gm;
+    private GameManager gm;
 
 	// Use this for initialization
 	void Start () {
         _agent = GetComponent<NavMeshAgent>();
         Player = GameObject.FindGameObjectWithTag("Player");
-        gm = GameObject.FindGameObjectWithTag("GameManager");
+        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 	
 	// Update is called once per frame
@@ -62,9 +62,13 @@ public class Rabbit : MonoBehaviour {
             Instantiate(rawMeat, this.gameObject.transform.position, Quaternion.identity);
 
             // if in tutorial mode, trigger dialogue
-            if (gm.GetComponent<GameManager>().IsTutorialMode())
+            if (gm.IsTutorialMode())
             {
                 GetComponent<DialogueTrigger>().TriggerDialogue();
+
+            } else
+            {
+                gm.RemoveRabbit();
             }
         }
     }

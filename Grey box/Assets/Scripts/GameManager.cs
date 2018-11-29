@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private int rabbitCapacity = 10;
+    private int rabbitCount;
+
     public float radius = 10.0f;
 
     public AudioClip choppingSound;
@@ -120,4 +123,22 @@ public class GameManager : MonoBehaviour
     {
         isTutorialMode = mode;
     }
+
+    public bool CheckCanSpawnRabbit()
+    {
+        return rabbitCount < rabbitCapacity;
+    }
+
+    public void AddRabbit()
+    {
+        rabbitCount++;
+    }
+
+    public void RemoveRabbit()
+    {
+        rabbitCount--;
+        if (rabbitCount < 0)
+            rabbitCount = 0;
+    }
+
 }
