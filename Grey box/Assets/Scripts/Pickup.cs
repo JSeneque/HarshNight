@@ -23,8 +23,11 @@ public class Pickup : MonoBehaviour {
                 {
                     // item can be added to the inventory
                     inventory.isFull[i] = true;
-                    //print("Inventory Slot " + i + " is " + inventory.isFull[i]);
+                    
+                    // add the item button to the inventory slot
                     Instantiate(itemButton, inventory.slots[i].transform, false);
+
+                    // get rid of the item in the game that was pickup
                     Destroy(gameObject);
                     break;
                 }
