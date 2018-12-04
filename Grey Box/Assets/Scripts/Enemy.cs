@@ -8,8 +8,6 @@ public class Enemy : MonoBehaviour {
     public float speed = 3.0f;
     public float pursueDistance = 5.0f;
     public GameObject explosion;
-    private AudioSource audioSource;
-    //public AudioClip deathSound;
 
     private Transform player;
 
@@ -19,7 +17,6 @@ public class Enemy : MonoBehaviour {
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         cameraAnim = Camera.main.GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
 	}
 
     public void TakeDamage(int amount)
@@ -32,8 +29,8 @@ public class Enemy : MonoBehaviour {
             Instantiate(explosion, transform.position, Quaternion.identity);
             cameraAnim.SetTrigger("Shake");
             Destroy(this.gameObject);
+            
 
-            audioSource.Play();
         }
     }
 
